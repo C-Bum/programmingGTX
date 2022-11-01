@@ -1,0 +1,32 @@
+Algoritmo Piramide
+	//Definiendo variables 
+	definir l, ap, h, Al, At, v, n, Pb, Ab  Como Real
+	n=4//= debido a que la base consta de 4 lados
+	escribir " ingrese la longitud de la piramide cuadrangular: "
+	leer l
+	escribir " ingrese el apotema de la piramide cuadrangular: "
+	leer ap
+	escribir " ingrese la altura de la piramide cuadrangular: "
+	leer h
+	//procesamiento de datos
+	//Area Lateral
+	si l > 0 y ap > 0 y h > 0 entonces
+		Pb = l * n
+		Al = 1/2 * (Pb*ap)
+		//Area Total
+		Ab = l^2
+		At = Al + Ab
+		//Volumen
+		v = 1/3 * (Ab*h)
+		//Salida de datos
+		escribir "------------------------------------------------"
+		escribir " El area lateralde la piramide cuadrangular es de: " trunc(Al) "  m² "
+		escribir "------------------------------------------------"
+		escribir " El area total de la piramide cuadrangular es de: " trunc(At) "  m² "
+		escribir "------------------------------------------------"
+		escribir " El volumen de la piramide cuadrangular es de: " trunc(v) "  m³  "
+		escribir "------------------------------------------------"
+	SiNo
+		escribir " Los valores que Ud ha ingresado son incorrectos!! "
+	finsi
+FinAlgoritmo

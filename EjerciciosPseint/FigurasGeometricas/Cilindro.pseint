@@ -1,0 +1,31 @@
+Algoritmo Cilindro
+	//definiendo variables
+	definir At, Al, v, h, r como real
+	//Entrada de datos 
+  
+	
+	escribir " Escribir el radio del cilindro: "
+	leer r
+	escribir " Escribrir la altura del cilindro: "
+	leer h
+	//Procesamiento de datyos
+	Si r > 0 y h > 0 Entonces
+		v= 3.1416*r^2*h
+		Al= 2*3.1416*r*h
+		At= 2*3.1416*r*(h+r)
+		//Salida de datos
+		escribir "------------------------------------------------"
+		escribir " El area lateral del cilindro es de: " trunc(Al) "  m² "
+		escribir "------------------------------------------------"
+		escribir " El area total del cilindro es de: " trunc(At) "  m² "
+		escribir "------------------------------------------------"
+		escribir " El volumen del cilindro es de: " trunc(v) "  m³  "
+		escribir "------------------------------------------------"
+	SiNo
+		escribir "Por favor Introduzca un valor correcto!!"
+	Fin Si
+
+
+
+FinAlgoritmo
+

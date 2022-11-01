@@ -1,0 +1,26 @@
+Algoritmo sin_titulo
+	//Diseñar un algoritmo que pida por teclado tres números; si el primero es
+	//negativo, debe imprimir el producto de los tres y si no lo es, imprimirá la suma
+	
+	definir num1, num2, num3, producto, suma Como Real
+	num1 = 0
+	num2 = 0
+	num3 = 0
+	producto = 0
+	suma = 0
+	escribir "ingrese el primer digito: "
+	Leer num1
+	escribir "ingrese el segundo digito: "
+	leer num2
+	escribir "ingrese el tercer digito: "
+	leer num3
+	
+	si num1 < 0 entonces 
+		producto = num1 * num2 * num3
+		escribir "El producto de los tres digitos es : ",producto
+	sino
+		suma = num1 + num2 + num3
+		escribir " La suma de los tres digitos es : ",suma
+FinSi
+
+FinAlgoritmo
